@@ -9,7 +9,7 @@ function App() {
   const [items, setItems] = useState(() => {
     if(localStorage.getItem('shoppinglist') == null) {
       console.log('no shopping list yet');
-      return '';
+      return [];
     }
     return JSON.parse(localStorage.getItem('shoppinglist'));
   });
